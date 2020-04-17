@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"  src="game.js"></script>
+
+</head>
+
+
+<body>
+    <main>
+<div class="container" >
+
+<div id="logo">     
+<h1 class="Heading" id="logo1"> <img src="https://www.kidsmathgamesonline.com/images/headings/logo.jpg"></h1>
+</div>
+<section class="section-b">
+        <div class="b-heading">
+          <h1>Addition Quiz for Kids</h1>
+<p>Put your math skills to the test with this little 
+addition quiz for kids. Answer questions <br> on different 
+range of basic addition problems that will challenge your math ability. How many can you answer correctly? Give it a go and find out!</p>
+
+        </div>
+ <div class="form-containeer">
+          
+    <div  class="bg">
+        <div  id="man"  class="content">
+      
+          <form name="game" id="game" >
+  
+          <div class="form-content">
+          <label> Q1. 17 + 45 = </label>
+          <input type="number" name="q1" id= "q" value="" >
+      </div>
+<div class="form-content">
+<label> Q2. 10 + 0 = </label>
+<input type="number" name="q2" id= "q" value="" >
+
+</div>
+<div class="form-content">
+<label> Q3. 14 + 17 = </label>
+<input type="number" name="q3" id= "q" value="" >
+
+</div>
+<div class="form-content">
+<label> Q4. 9 + 0 = </label>
+<input type="number" name="q4" id= "q" value="q4" >
+
+</div>
+
+<div class="form-content">
+<label> Q5. 14 + 1 = </label>
+<input type="number" name="q5" id= "q" value="q5" >
+</div>
+
+<div class="form-content">
+<label> Q6. 7 + 13 = </label>
+<input type="number" name="q6" id= "q" value="q6" >
+
+</div>
+<div class="form-content">
+<label> Q7. 6 + 15 = </label>
+<input type="number" name="q7" id= "q" value="q7" >
+
+</div>
+<div class="form-content">
+<label> Q8. 7 + 1 = </label>
+<input type="number" name="q8" id= "q" value="q8" >
+
+</div>
+<div class="form-content">
+<label> Q9. 12 + 7 = </label>
+<input type="number" name="q9" id= "q" value="q9" >
+
+</div>
+<div class="form-content">
+<label> Q10. 10 + 10 = </label>
+<input type="number" name="q10" id= "q" value="q10" >
+</div>
+
+
+
+
+
+<br> <br>
+<input class="btn" type="button" name="" onclick="quiz();" value="Submit">
+ <button class="bt" type="reset" value="reset" form="game" >  Reset </button>
+</form>
+
+
+
+
+
+
+        </div>
+    </div>
+    
+        </div>
+
+</div>
+
+
+
+
+<div  id="fsubmit">          
+<p id="nscore"></p>
+<p id="answers"></p>
+<h2 id="msg"></h2>
+<h3 id ="pic"></h3>
+
+ </div>   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+</body>
+</html>
+
+
+
+
+
+<!--   <script type="text/javascript">
+	
+	function quiz(){
+		var score = 0;
+		var q1 = prompt("What is your name?");
+		if (q1 == "Femi") {
+			score++;
+			alert("Correct: your score is" + score);
+		}else {
+			alert("You missed it! your score is" + score);
+		}
+
+var q2 = prompt("How Old are you?");
+		if (q2 == "12") {
+			score++;
+			alert("Correct: your score is" + score);
+		}else {
+			alert("You missed it! your score is" + score);
+		}
+
+var q3 = prompt("Who is the president of Nigeria?");
+		if (q3 == "Buhari") {
+			score++;
+			alert("Correct: your score is" + score);
+		}else {
+			alert("You missed it! your score is" + score);
+		}
+
+if (score == 3) {
+	alert("You won!: Your score is "+ score);
+}
+else{
+	alert("Your score is"+ score); 
+}
+
+
+
+	}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+var score = 0;
+	var q1 = document.game.q1.value;
+var q2 = document.game.q2.value;
+var q3 = document.game.q3.value;
+if (q1 == "Femi") {
+score++;
+
+}
+if (q2 == 13) {
+	score++;
+}
+if (q3 == "Seyi"){
+	score++;
+}
+
+
+
+
+document.getElementById("fsubmit").style.visibility = "visible";
+document.getElementById("nscore").innerHTML = "your score is " + score + "Correct";
+ // document.getElementById("fsubmit").style.visibility = "visible";
+
+
+
+
+ for (var i = 0; i < message.length; i++) {
+}
+if (score == 1 || score < 2 ) {
+	message[i = 0];
+}
+if (score == 2  && score < 3) {
+	message[i= 1];
+}
+if (score == 3) {
+	message[i = 2];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+function quiz() {
+		// body...
+var score = 0;
+	var q1 = document.game.q1.value;
+var q2 = document.game.q2.value;
+var q3 = document.game.q3.value;
+if (q1 == "62") {
+score++;
+
+}
+if (q2 == "10") {
+	score++;
+}
+if (q3 == "Seyi"){
+	score++;
+}	
+var message = ["GOOD", 'BETTER', "BEST"];
+var range;
+if(score == 3){
+	range = 2;
+}
+
+
+if (score == 2) {
+	range = 1;
+}
+
+
+
+
+
+
+document.getElementById("fsubmit").style.visibility = "visible";
+document.getElementById("nscore").innerHTML = "your score is " + score +" " + "correct";
+document.getElementById("msg").innerHTML = message[range];
+//document.getElementById("pic").src = pictures[range];
+
+}
+
+
+
+
+
+
+
+function quiz() {
+	// body...
+	var score = 0;
+	var q1 = document.getElementById('game').q1.value;
+	var q2 = document.getElementById("game").q2.value;
+	var q3 = document.getElementById("game").q3.value;
+	var q4 = document.getElementById("game").q4.value;
+	var q5 = document.getElementById("game").q5.value;
+	var q6 = document.getElementById("game").q6.value;
+	var q7 = document.getElementById("game").q7.value;
+	var q8 = document.getElementById("game").q8.value;
+	var q9 = document.getElementById("game").q9.value;
+	var q10 = document.getElementById("game").q10.value;
+if (q1 == 62) {
+	score++;
+}
+if (q2 == 10) {
+	score++;
+}
+if (q3 == 31) {
+	score++;
+}
+if (q4 == 9) {
+	score++;
+}
+if (q5 == 15) {
+	score++;
+}
+if (q6 == 20) {
+	score++;
+}
+if (q7 == 21) {
+	score++;
+}
+if (q8 == 8) {
+	score++;
+}
+if (q9 == 19) {
+	score++;
+}
+if (q10 == 20) {
+	score++;
+}
+
+var message = ["Bravo! you can do better.", "Not good enough.", 
+"You need to study more on addition.", "Too Bad!"];
+for (var i = 0; i < message.length; i++) {
+	}
+if (score == 8 ) {
+	message[i = 0];
+}
+
+
+
+
+document.getElementById("fsubmit").style.visibility = "visible";
+document.getElementById("nscore").innerHTML = "your score is " + score +" " + "correct";
+document.getElementById("msg").innerHTML = message[i];	
+}
+
+
+<br><br>
+<label> Q4. 9 + 0 = </label>
+<input type="number" name="q4" id= "q" value="q4" >
+
+<br><br>
+<label> Q5. 14 + 1 = </label>
+<input type="number" name="q5" id= "q" value="q5" >
+
+
+<br><br>
+<label> Q6. 7 + 13 = </label>
+<input type="number" name="q6" id= "q" value="q6" >
+
+<br><br>
+<label> Q7. 6 + 15 = </label>
+<input type="number" name="q7" id= "q" value="q7" >
+
+<br><br>
+<label> Q8. 7 + 1 = </label>
+<input type="number" name="q8" id= "q" value="q8" >
+
+<br><br>
+<label> Q9. 12 + 7 = </label>
+<input type="number" name="q9" id= "q" value="q9" >
+
+<br><br>
+<label> Q10. 10 + 10 = </label>
+<input type="number" name="q10" id= "q" value="q10" >
